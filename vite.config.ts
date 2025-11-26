@@ -7,7 +7,7 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 export default defineConfig({
   plugins: [
     tanstackRouter({ target: "react", autoCodeSplitting: true }),
-    nitro(),
+    nitro({ preset: "vercel" }),
     react(),
   ],
   nitro: {
